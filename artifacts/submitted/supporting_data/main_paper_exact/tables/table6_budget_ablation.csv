@@ -1,0 +1,8 @@
+Protocol,Method,Gain,Interpretation
+per-class-1,Soft weighting,+1.491,Downweights 5 bad supports at once
+per-class-1,Budget<=3 hard delete,+0.723,Delete budget is insufficient
+per-class-1,Fixed top-3 delete,+0.932,Always uses the full budget
+per-class-1,Per-class delete r = 1,+1.593,Uses favorable protocol prior
+corrupt-total-3,Soft transfer,+0.844,Soft reliability transfers
+corrupt-total-3,Budget<=3 hard delete,+0.736,Hard deletion works when budgets align
+corrupt-total-3,Fixed top-3 delete,+0.752,Close to budget-aligned hard delete

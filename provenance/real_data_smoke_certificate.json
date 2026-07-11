@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "kind": "pvse_reported_experiments_real_data_integration_certificate",
+  "executed_date": "2026-07-11",
+  "release_version": "0.4.0rc2",
+  "success": true,
+  "verification_level": "reduced_count_real_data_integration",
+  "claim": "Real-data integration passed on reduced episode/query counts across all reported experiment families.",
+  "validator": {
+    "checks": 238,
+    "passed": 238,
+    "failed": 0,
+    "steps": 33,
+    "required_steps": 32,
+    "failed_steps": 0
+  },
+  "verified_scope": [
+    "real miniImageNet image loading and 84x84 transforms",
+    "strict ResNet-12 checkpoint loading and 640-D global / 640x5x5 spatial outputs",
+    "2,626-action hard-delete lattice on validation and test episodes",
+    "clean PVSE-C switch, A0-only hard deletion, and FULL hard deletion",
+    "noisy PVSE-R at 20%, 40%, and 60% contamination",
+    "global-only and global-plus-patch reliability branches",
+    "Table-6 budget policies, TraNFS-style operators, and all 22 external settings",
+    "strict FEAT loading and native set-to-set clean/noisy plug-in paths",
+    "computational profile, postflight invariance, and CMT artifact immutability"
+  ],
+  "asset_identities": {
+    "paper_backbone_sha256": "763f0ae0a2233f16a9bd551ea22e2997e95dde8efdeb79270e52d9bd87bd1568",
+    "feat_source_revision": "47bdc7c1672e00b027c67469d0291e7502918950",
+    "feat_checkpoint_sha256": "ee54213c754b2c25d07bb7b032549140d7be8d4e253f597cfa57a314696191ee"
+  },
+  "post_run_audit": {
+    "scientific_source_unchanged_during_run": true,
+    "submitted_reference_unchanged": true
+  }
+}

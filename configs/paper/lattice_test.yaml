@@ -1,0 +1,26 @@
+schema_version: 1
+run_kind: formal_paper_configuration
+formal_numerical_reproduction: true
+experiment: lattice
+paths:
+  data_root: ${PVSE_MINIIMAGENET_ROOT}
+  checkpoint: ${PVSE_BACKBONE_CHECKPOINT}
+  output_dir: ${PVSE_OUTPUT_ROOT}/lattice_test
+checkpoint_sha256: 763f0ae0a2233f16a9bd551ea22e2997e95dde8efdeb79270e52d9bd87bd1568
+runtime:
+  device: ${PVSE_DEVICE}
+  batch_size: 96
+  amp: false
+  channels_last: false
+protocol:
+  way: 5
+  shot: 5
+  query: 15
+  image_size: 84
+  logit_scale: 10.0
+parameters:
+  split: test
+  episodes: 1000
+  seed: 3920
+  seed_offset: 0
+  kmax: 3

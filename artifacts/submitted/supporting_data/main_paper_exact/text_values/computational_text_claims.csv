@@ -1,0 +1,5 @@
+Location,Quantity,Displayed value,Basis
+Sec. 8,full lattice candidate count,2626/query,main_paper_exact/tables/table11_computational_profile.csv
+Sec. 8,A0-only candidate count,26/query,main_paper_exact/tables/table11_computational_profile.csv
+Sec. 8,PVSE-C-HD A0-only apply rate,5.39%,clean test1000 apply-rate summary used in the reported computational profile
+Sec. 8,support count scored by PVSE-R,25 supports,main_paper_exact/tables/table11_computational_profile.csv

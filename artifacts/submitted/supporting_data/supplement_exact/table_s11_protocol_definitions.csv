@@ -1,0 +1,7 @@
+Protocol,Definition
+Main within-episode other-class copy/replacement,Target support representation is replaced by a source support from another episodic class; the observed target label remains unchanged; the source support remains in its original observed class; the same source may appear under two observed labels; same-class and out-of-episode sources are disallowed.
+corrupt_per_class_1 / 2 / 3,"Corrupts 1 / 2 / 3 supports per class, corresponding to 20% / 40% / 60% support contamination."
+corrupt_total_3,Corrupts exactly three supports per episode and is used for delete-budget alignment diagnostics.
+TraNFS-style symmetric support replacement,"A corrupted support slot is replaced by a sample from an episodic noise pool, with the source class sampled from other episodic classes."
+TraNFS-style paired support replacement,A corrupted support slot is replaced using a fixed paired source-class mapping.
+FEAT noisy plug-in support injection,The frozen FEAT episode protocol is kept; support corruption is injected before downstream prediction and the downstream model artifacts remains frozen.

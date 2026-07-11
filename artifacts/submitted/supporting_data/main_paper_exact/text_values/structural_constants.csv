@@ -1,0 +1,13 @@
+Context,Quantity,Value,Basis
+Sec. 1 / Eq. 1,ways,5,5-way 5-shot episode
+Sec. 1 / Eq. 1,shots per class,5,5-way 5-shot episode
+Sec. 1 / Eq. 1,support count,25,5 x 5 supports
+Sec. 1 / Eq. 1,delete-size choices,"0, 1, 2, 3",delete up to K supports
+Sec. 1 / Eq. 1,delete budget K,3,used throughout
+Sec. 1 / Eq. 1,hard-delete lattice size,2626,"C(25,0)+C(25,1)+C(25,2)+C(25,3)"
+Sec. 3.1,delete action condition,|D| <= K,formal definition
+Sec. 3.2,patch-map shape,H x W x d,formal definition
+Sec. 3.2,bidirectional score factor,1/2,average of query-to-class and class-to-query patch scores
+Sec. 3.4,soft-weight clipping range,"[w_min, 1]",PVSE-R soft weighting
+Sec. 3.5,hard deletion mask values,"{0, 1}",binary hard deletion
+Sec. 3.5,soft weighting values,"[0, 1]",continuous relaxation

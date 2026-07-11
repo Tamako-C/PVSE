@@ -1,0 +1,1 @@
+Figure 4 is a conceptual workflow diagram. It shows: episodic input with support S and query q; frozen backbone; global evidence; patch map; PVSE verifier/reliability using global + patch evidence; hard deletion and soft weighting as two realizations; prediction output. No additional numeric results are introduced by the figure.

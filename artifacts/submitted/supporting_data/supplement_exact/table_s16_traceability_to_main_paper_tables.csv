@@ -1,0 +1,11 @@
+Main paper item,Supplement section,Source table/csv,Note
+Table 1,"S2, S8, S9","table_s1, table_s10, table_s11",episode and lattice protocol
+Figures 1-4,"S2, S8, S9","table_s1, table_s10, table_s11",lattice and confidence definitions
+Table 4,"S3, S8","table_s2, table_s3, table_s10",clean PVSE-C
+Table 5,"S4, S5, S8","table_s4, table_s5, table_s10",noisy severity curve
+Table 6,"S4, S5, S9","table_s6a, table_s6b, table_s11",hard-delete versus weighting
+Table 7,"S3, S4","table_s2a, table_s5",patch evidence ablation
+Table 8,"S5, S8","table_s7, table_s10",TraNFS-style protocols
+Table 9,"S7, S8","table_s9, table_s10",external fixed transfer
+Table 10,"S5, S6, S7, S8","table_s7, table_s8, table_s9, table_s10",FEAT plug-in
+Table 11,S9,table_s11,computational profile

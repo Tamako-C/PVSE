@@ -1,0 +1,7 @@
+Location,Claim,Displayed value,Artifact basis
+Abstract / Sec. 4,A0 validation accuracy,80.46%,main_paper_exact/tables/table1_action_density.csv
+Abstract / Sec. 4,validation rescue portion,14.87%,main_paper_exact/tables/table1_action_density.csv
+Abstract / Sec. 4,validation oracle accuracy,95.33% / 95.332%,main_paper_exact/tables/table1_action_density.csv
+Sec. 4 / Fig. 2 text,rescue queries in >10% density bin,44.7%,main_paper_exact/figures_data/fig2_rescue_density_distribution.csv
+Sec. 4 / Fig. 3 text,safe proportion rises with A0 margin,40.2% to 88.1%,main_paper_exact/figures_data/fig3_a0_margin_case_composition.csv
+Sec. 4 / Fig. 3 text,rescue proportion decreases with A0 margin,52.3% to 7.9%,main_paper_exact/figures_data/fig3_a0_margin_case_composition.csv

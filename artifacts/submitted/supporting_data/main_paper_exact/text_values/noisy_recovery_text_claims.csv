@@ -1,0 +1,3 @@
+Location,Claim,Displayed value,Calculation basis
+Sec. 7.2,clean-to-noisy loss recovered at 20%,37.1%,1.511pp / (77.775% - 73.697%) = 37.1%
+Sec. 7.2,corrupt-support oracle gap recovered at 20%,67.6%,1.511pp / 2.236pp = 67.6%; the 2.236pp denominator is the held-out corrupt-support oracle gap for the same 20% protocol

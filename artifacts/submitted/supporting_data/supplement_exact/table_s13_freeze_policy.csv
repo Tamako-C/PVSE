@@ -1,0 +1,10 @@
+Component,Selected on,Frozen during,Test data used for selection?
+Feature extractor,pre-existing model-development split,all PVSE experiments,false
+Clean verifier model,official validation,test and transfer,false
+Clean verifier scaler,official validation,test and transfer,false
+Clean verifier threshold,official validation,test and transfer,false
+Clean hard-delete policy,official validation,test and transfer,false
+Noisy reliability estimator by severity,train/validation noisy episodes,test,false
+beta / w_min,validation noisy episodes,test,false
+External transfer,miniImageNet development only,external evaluation,false
+FEAT plug-in,PVSE calibration split,FEAT plug-in test,false

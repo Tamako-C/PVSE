@@ -1,0 +1,7 @@
+Protocol,Policy,Parameter,Value
+per-class-1,threshold-cap,threshold,0.7087526842951775
+per-class-1,threshold-cap,kmax,3
+per-class-1,threshold-cap,edit_cost,N/A
+total3,threshold-cap,threshold,0.9420585632324219
+total3,threshold-cap,kmax,3
+total3,threshold-cap,edit_cost,N/A

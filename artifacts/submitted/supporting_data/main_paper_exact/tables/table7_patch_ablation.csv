@@ -1,0 +1,7 @@
+Setting,Noise,Global-only,Global+Patch
+Main noisy,20%,+0.963,+1.511
+Main noisy,40%,+1.447,+3.360
+Main noisy,60%,-1.660,+3.555
+FEAT plug-in,20%,+1.343,+1.296
+FEAT plug-in,40%,+1.997,+2.096
+FEAT plug-in,60%,+0.221,+0.983

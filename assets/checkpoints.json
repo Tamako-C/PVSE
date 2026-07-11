@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "release_tag": "v0.4.0rc2",
+  "assets": [
+    {
+      "id": "paper_resnet12_backbone",
+      "filename": "backbone_v315_best_for_v316_logreg.pth",
+      "size_bytes": 49934618,
+      "sha256": "763f0ae0a2233f16a9bd551ea22e2997e95dde8efdeb79270e52d9bd87bd1568",
+      "distribution": "GitHub Release asset",
+      "license": "MIT; Copyright (c) 2026 Qianfeng Yuan"
+    },
+    {
+      "id": "feat_5shot_checkpoint",
+      "filename": "miniimagenet_feat_5shot.pth",
+      "size_bytes": 56316902,
+      "sha256": "ee54213c754b2c25d07bb7b032549140d7be8d4e253f597cfa57a314696191ee",
+      "source_revision": "47bdc7c1672e00b027c67469d0291e7502918950",
+      "distribution": "obtain from upstream FEAT; not rehosted here",
+      "license": "upstream terms"
+    }
+  ]
+}

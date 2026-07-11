@@ -1,0 +1,1 @@
+Figure 5 is a conceptual diagram for clean and noisy support editing. It shows clean support as query-conditioned temporary edit, noisy support as support-level cleaning, and hard deletion / soft weighting as two realizations from the same patch-verifiable reliability signal. No additional numeric results are introduced by the figure.

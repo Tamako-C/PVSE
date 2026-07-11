@@ -1,0 +1,7 @@
+Protocol,Policy,Parameter,Value
+per-class-1,query-margin,threshold,N/A
+per-class-1,query-margin,kmax,3
+per-class-1,query-margin,edit_cost,0.01
+total3,query-maxprob,threshold,N/A
+total3,query-maxprob,kmax,3
+total3,query-maxprob,edit_cost,0.02

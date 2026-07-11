@@ -1,0 +1,10 @@
+Step,Instruction
+1,Compute the A0 prediction and the A0 runner-up proposal c*.
+2,"Compute the verifier score g(q, c*)."
+3,"If g(q, c*) is below the fixed threshold, return A0."
+4,Enumerate delete actions D with |D| <= 3 under the chosen deletion scope.
+5,"For each D, recompute the prediction after deletion."
+6,Keep only feasible actions whose post-delete prediction equals c*.
+7,"If the feasible set is empty, return A0."
+8,Select the feasible action with the largest proposal margin minus edit cost.
+9,Return the proposal prediction and the selected delete mask.

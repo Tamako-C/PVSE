@@ -1,0 +1,8 @@
+Feature family,Examples,Role
+Observed-class global compactness,leave-one-out centroid similarity and distance,Find supports inconsistent with their observed class
+Nearest-other global margin,nearest other-class centroid similarity and gap,Detect support items closer to another class
+Leave-one-out prototype change,prototype shift if the support is removed,Measure support influence on class prototype
+Removal compactness gain,class compactness improvement if removed,Score whether deleting a support improves class coherence
+Own-class patch consistency,"own-class patch match mean, coverage, agreement count",Check local correspondence to the observed class
+Nearest-other patch affinity,nearest other patch match and own-minus-other margin,Detect local evidence for another class
+Patch margin and coverage,"bidirectional patch margin, top patch coverage",Stabilize reliability beyond global geometry

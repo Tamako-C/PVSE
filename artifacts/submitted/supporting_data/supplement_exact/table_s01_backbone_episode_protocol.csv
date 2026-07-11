@@ -1,0 +1,13 @@
+Item,Value
+Backbone / feature extractor,Frozen miniImageNet ResNet-12 feature extractor
+Backbone update,None
+Input resolution,84 x 84 RGB
+Normalization,ImageNet mean/std
+Global embedding dimension,640
+Patch feature map,"layer4 spatial map, 5 x 5, 640 channels"
+Prototype metric,Cosine dot product after L2 normalization
+A0 posterior,Softmax over scaled prototype similarities
+miniImageNet episode,"5-way 5-shot, 15 query images per class"
+test1000,"1000 episodes, 75,000 query predictions"
+Validation calibration,Official validation episodes
+Feature extractor update,None during PVSE calibration and evaluation

@@ -1,0 +1,1 @@
+For fixed K, full enumeration scales as O(n^K). Large support sets require candidate pruning or approximate search.

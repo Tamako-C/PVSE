@@ -1,0 +1,8 @@
+Step,Instruction
+1,"For each support item, compute global and patch reliability features."
+2,Estimate p_i = P(support i is corrupted).
+3,"Soft branch: compute w_i = clip(1 - beta * p_i, w_min, 1)."
+4,Build weighted prototypes and classify queries.
+5,Hard branch: select suspicious supports under the fixed threshold or budget policy.
+6,Apply the support mask or reduced support set.
+7,Classify using the cleaned support set.

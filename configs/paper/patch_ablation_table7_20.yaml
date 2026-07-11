@@ -1,0 +1,33 @@
+schema_version: 1
+run_kind: formal_paper_configuration
+formal_numerical_reproduction: true
+experiment: noisy
+paths:
+  data_root: ${PVSE_MINIIMAGENET_ROOT}
+  checkpoint: ${PVSE_BACKBONE_CHECKPOINT}
+  output_dir: ${PVSE_OUTPUT_ROOT}/patch_ablation_table7_20
+checkpoint_sha256: 763f0ae0a2233f16a9bd551ea22e2997e95dde8efdeb79270e52d9bd87bd1568
+runtime:
+  device: ${PVSE_DEVICE}
+  batch_size: 96
+  amp: false
+  channels_last: false
+protocol:
+  way: 5
+  shot: 5
+  query: 15
+  image_size: 84
+  logit_scale: 10.0
+parameters:
+  severity_percent: 20
+  seed: 3920
+  train_seed_offset: 222
+  val_seed_offset: 111
+  test_seed_offset: 0
+  corruption_seed: 41820
+  train_episodes: 50
+  val_episodes: 20
+  test_episodes: 1000
+  bootstrap_samples: 10000
+  bootstrap_seed: 5200
+  feature_set: global_only

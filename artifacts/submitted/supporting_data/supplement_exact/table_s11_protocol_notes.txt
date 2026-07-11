@@ -1,0 +1,1 @@
+For the primary noisy protocol, corruption metadata is used for supervision and evaluation only. It is not provided as an inference feature.

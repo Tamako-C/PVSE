@@ -1,0 +1,332 @@
+{
+  "schema_version": 2,
+  "paper_title": "Identifiable Support Editing: From Hard-Delete Lattices to Patch-Verifiable Reliability",
+  "repository_version": "0.4.0rc2",
+  "release_contents": {
+    "formal_configs": 14,
+    "submitted_supporting_data": "byte_exact",
+    "unit_and_protocol_tests": 47,
+    "paper_items": 10
+  },
+  "verification": {
+    "submitted_artifact_checks": "121/121 passed",
+    "submitted_arithmetic_checks": "52/52 passed",
+    "unit_and_protocol_tests": "47/47 passed",
+    "real_data_integration": "passed on reduced episode/query counts across all reported experiment families",
+    "software_license": "MIT; Copyright (c) 2026 Qianfeng Yuan"
+  },
+  "assets": [
+    {
+      "id": "miniimagenet",
+      "required_for": [
+        "Table 1",
+        "Figures 2-3",
+        "Tables 4-8"
+      ],
+      "access": "local dataset root via PVSE_MINIIMAGENET_ROOT"
+    },
+    {
+      "id": "paper_backbone_checkpoint",
+      "filename": "backbone_v315_best_for_v316_logreg.pth",
+      "size_bytes": 49934618,
+      "sha256": "763f0ae0a2233f16a9bd551ea22e2997e95dde8efdeb79270e52d9bd87bd1568",
+      "access": "GitHub Release asset via PVSE_BACKBONE_CHECKPOINT"
+    },
+    {
+      "id": "external_datasets",
+      "required_for": [
+        "Table 9"
+      ],
+      "datasets": [
+        "CUB",
+        "Caltech101",
+        "DTD",
+        "FGVC_Aircraft",
+        "OfficeHome",
+        "PACS"
+      ],
+      "access": "local roots indexed with pvse-build-external-index"
+    },
+    {
+      "id": "feat",
+      "required_for": [
+        "Table 7 FEAT rows",
+        "Table 10"
+      ],
+      "source_repository": "Sha-Lab/FEAT",
+      "source_revision": "47bdc7c1672e00b027c67469d0291e7502918950",
+      "checkpoint_filename": "miniimagenet_feat_5shot.pth",
+      "size_bytes": 56316902,
+      "sha256": "ee54213c754b2c25d07bb7b032549140d7be8d4e253f597cfa57a314696191ee",
+      "access": "local upstream source and checkpoint through documented interfaces"
+    }
+  ],
+  "items": [
+    {
+      "paper_item": "Figure 1 / Table 1",
+      "computation": "full delete<=3 lattice; safe/rescue/dead; oracle upper bound",
+      "configs": [
+        "configs/paper/lattice_val.yaml",
+        "configs/paper/lattice_test.yaml"
+      ],
+      "entrypoint": "pvse-run-config",
+      "modules": [
+        "pvse/eval/lattice.py",
+        "pvse/experiments/lattice.py",
+        "pvse/editing/delete_lattice.py"
+      ],
+      "reference_artifacts": [
+        "artifacts/submitted/supporting_data/main_paper_exact/tables/table1_action_density.csv",
+        "artifacts/submitted/supporting_data/main_paper_exact/figures_data/fig1_hard_delete_lattice_and_scene_types.md"
+      ],
+      "generated_outputs": [
+        "table1_action_density.csv",
+        "lattice_query_outputs.csv"
+      ],
+      "verification": {
+        "implementation": "present",
+        "submitted_reference": "byte_exact_and_arithmetic_validated",
+        "real_data_reduced_count": "passed"
+      }
+    },
+    {
+      "paper_item": "Figures 2-3",
+      "computation": "rescue-density/delete-size and A0-margin case composition",
+      "configs": [
+        "configs/paper/lattice_val.yaml"
+      ],
+      "entrypoint": "pvse-run-config",
+      "modules": [
+        "pvse/experiments/lattice.py",
+        "pvse/eval/lattice.py"
+      ],
+      "reference_artifacts": [
+        "artifacts/submitted/supporting_data/main_paper_exact/figures_data/fig2_rescue_density_distribution.csv",
+        "artifacts/submitted/supporting_data/main_paper_exact/figures_data/fig2_delete_size_composition.csv",
+        "artifacts/submitted/supporting_data/main_paper_exact/figures_data/fig3_a0_margin_case_composition.csv"
+      ],
+      "generated_outputs": [
+        "fig2_rescue_density_distribution.csv",
+        "fig2_delete_size_composition.csv",
+        "fig3_a0_margin_case_composition.csv"
+      ],
+      "verification": {
+        "implementation": "present",
+        "submitted_reference": "byte_exact_and_arithmetic_validated",
+        "real_data_reduced_count": "passed"
+      }
+    },
+    {
+      "paper_item": "Table 4",
+      "computation": "clean PVSE-C Switch, HD A0-only and HD FULL",
+      "configs": [
+        "configs/paper/clean_table4.yaml"
+      ],
+      "entrypoint": "pvse-run-config",
+      "modules": [
+        "pvse/clean/features.py",
+        "pvse/clean/verifier.py",
+        "pvse/clean/pvse_c.py",
+        "pvse/experiments/miniimagenet.py"
+      ],
+      "reference_artifacts": [
+        "artifacts/submitted/supporting_data/main_paper_exact/tables/table4_clean_test1000.csv"
+      ],
+      "generated_outputs": [
+        "clean_calibration_rows.csv",
+        "clean_verifier.joblib",
+        "clean_query_outputs.csv",
+        "clean_results.json"
+      ],
+      "verification": {
+        "implementation": "present",
+        "submitted_reference": "byte_exact_and_arithmetic_validated",
+        "real_data_reduced_count": "passed"
+      }
+    },
+    {
+      "paper_item": "Table 5",
+      "computation": "main within-episode replacement, PVSE-R-Soft at 20/40/60%",
+      "configs": [
+        "configs/paper/noisy_table5_20.yaml",
+        "configs/paper/noisy_table5_40.yaml",
+        "configs/paper/noisy_table5_60.yaml"
+      ],
+      "entrypoint": "pvse-run-config",
+      "modules": [
+        "pvse/noisy/corruption.py",
+        "pvse/noisy/features.py",
+        "pvse/noisy/reliability.py",
+        "pvse/noisy/weighted_proto.py",
+        "pvse/experiments/miniimagenet.py"
+      ],
+      "reference_artifacts": [
+        "artifacts/submitted/supporting_data/main_paper_exact/tables/table5_noisy_severity.csv"
+      ],
+      "generated_outputs": [
+        "support_rows_train.csv",
+        "support_rows_val.csv",
+        "reliability_bundle.joblib",
+        "noisy_query_outputs.csv",
+        "noisy_results.json"
+      ],
+      "verification": {
+        "implementation": "present",
+        "submitted_reference": "byte_exact_and_arithmetic_validated",
+        "real_data_reduced_count": "passed"
+      }
+    },
+    {
+      "paper_item": "Table 6",
+      "computation": "soft and delete-budget policies under per-class-1 and corrupt-total-3",
+      "configs": [
+        "configs/paper/budget_table6.yaml"
+      ],
+      "entrypoint": "pvse-run-config",
+      "modules": [
+        "pvse/noisy/policies.py",
+        "pvse/experiments/budget.py"
+      ],
+      "reference_artifacts": [
+        "artifacts/submitted/supporting_data/main_paper_exact/tables/table6_budget_ablation.csv"
+      ],
+      "generated_outputs": [
+        "table6_budget_ablation_generated.csv",
+        "budget_results.json"
+      ],
+      "verification": {
+        "implementation": "present",
+        "submitted_reference": "byte_exact_and_arithmetic_validated",
+        "real_data_reduced_count": "passed"
+      }
+    },
+    {
+      "paper_item": "Table 7",
+      "computation": "global-only versus global+patch for main PVSE-R and FEAT plugin",
+      "configs": [
+        "configs/paper/patch_ablation_table7_20.yaml",
+        "configs/paper/patch_ablation_table7_40.yaml",
+        "configs/paper/patch_ablation_table7_60.yaml",
+        "configs/paper/feat_table10.yaml"
+      ],
+      "entrypoint": "pvse-run-config",
+      "modules": [
+        "pvse/patch/correspondence.py",
+        "pvse/noisy/features.py",
+        "pvse/plugins/feat.py",
+        "pvse/experiments/feat.py"
+      ],
+      "reference_artifacts": [
+        "artifacts/submitted/supporting_data/main_paper_exact/tables/table7_patch_ablation.csv"
+      ],
+      "generated_outputs": [
+        "noisy_results.json",
+        "noisy_summary.json"
+      ],
+      "verification": {
+        "implementation": "present",
+        "submitted_reference": "byte_exact_and_arithmetic_validated",
+        "real_data_reduced_count": "passed"
+      }
+    },
+    {
+      "paper_item": "Table 8",
+      "computation": "TraNFS-style symmetric/paired replacement at 20/40/60%",
+      "configs": [
+        "configs/paper/tranfs_table8.yaml"
+      ],
+      "entrypoint": "pvse-run-config",
+      "modules": [
+        "pvse/protocols/tranfs.py",
+        "pvse/experiments/tranfs.py"
+      ],
+      "reference_artifacts": [
+        "artifacts/submitted/supporting_data/main_paper_exact/tables/table8_tranfs_style.csv"
+      ],
+      "generated_outputs": [
+        "table8_tranfs_style_generated.csv",
+        "tranfs_results.json"
+      ],
+      "verification": {
+        "implementation": "present",
+        "submitted_reference": "byte_exact_and_arithmetic_validated",
+        "real_data_reduced_count": "passed"
+      }
+    },
+    {
+      "paper_item": "Table 9",
+      "computation": "fixed clean transfer to CUB, Caltech101, DTD, FGVC-Aircraft, OfficeHome and PACS",
+      "configs": [
+        "configs/paper/external_table9.yaml"
+      ],
+      "entrypoint": "pvse-run-config",
+      "modules": [
+        "pvse/data/external.py",
+        "pvse/experiments/external.py",
+        "pvse/cli/build_external_index.py"
+      ],
+      "reference_artifacts": [
+        "artifacts/submitted/supporting_data/main_paper_exact/tables/table9_external_clean.csv"
+      ],
+      "generated_outputs": [
+        "external_clean_query_outputs.csv",
+        "table9_external_clean_generated.csv",
+        "external_clean_results.json"
+      ],
+      "verification": {
+        "implementation": "present",
+        "submitted_reference": "byte_exact_and_arithmetic_validated",
+        "real_data_reduced_count": "passed"
+      }
+    },
+    {
+      "paper_item": "Table 10",
+      "computation": "frozen FEAT clean and noisy PVSE plugin",
+      "configs": [
+        "configs/paper/feat_table10.yaml"
+      ],
+      "entrypoint": "pvse-run-config",
+      "modules": [
+        "pvse/plugins/feat.py",
+        "pvse/experiments/feat.py"
+      ],
+      "reference_artifacts": [
+        "artifacts/submitted/supporting_data/main_paper_exact/tables/table10_feat_plugin.csv"
+      ],
+      "generated_outputs": [
+        "clean_summary.json",
+        "noisy_summary.json",
+        "summary.json"
+      ],
+      "verification": {
+        "implementation": "present",
+        "submitted_reference": "byte_exact_and_arithmetic_validated",
+        "real_data_reduced_count": "passed"
+      }
+    },
+    {
+      "paper_item": "Table 11",
+      "computation": "candidate counts and optional clean A0-only apply-rate audit",
+      "configs": [
+        "configs/paper/computational_profile_table11.yaml"
+      ],
+      "entrypoint": "pvse-run-config",
+      "modules": [
+        "pvse/experiments/profile.py"
+      ],
+      "reference_artifacts": [
+        "artifacts/submitted/supporting_data/main_paper_exact/tables/table11_computational_profile.csv",
+        "artifacts/submitted/supporting_data/main_paper_exact/text_values/computational_text_claims.csv"
+      ],
+      "generated_outputs": [
+        "table11_computational_profile_generated.csv",
+        "computational_profile.json"
+      ],
+      "verification": {
+        "implementation": "present",
+        "submitted_reference": "byte_exact_and_arithmetic_validated",
+        "real_data_reduced_count": "passed"
+      }
+    }
+  ]
+}

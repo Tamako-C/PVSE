@@ -1,0 +1,42 @@
+submitted_item,submitted_pdf_location,artifact_or_source,status
+Main Table 1,Main Table 1,main_paper_exact/tables/table1_action_density.csv,covered
+Main Table 2,Main Table 2,main_paper_exact/tables/table2_pvse_variants_plug_in_conditions.csv,covered
+Main Table 3,Main Table 3,main_paper_exact/tables/table3_experimental_blocks.csv,covered
+Main Table 4,Main Table 4,main_paper_exact/tables/table4_clean_test1000.csv,covered
+Main Table 5,Main Table 5,main_paper_exact/tables/table5_noisy_severity.csv,covered
+Main Table 6,Main Table 6,main_paper_exact/tables/table6_budget_ablation.csv,covered
+Main Table 7,Main Table 7,main_paper_exact/tables/table7_patch_ablation.csv,covered
+Main Table 8,Main Table 8,main_paper_exact/tables/table8_tranfs_style.csv,covered
+Main Table 9,Main Table 9,main_paper_exact/tables/table9_external_clean.csv,covered
+Main Table 10,Main Table 10,main_paper_exact/tables/table10_feat_plugin.csv,covered
+Main Table 11,Main Table 11,main_paper_exact/tables/table11_computational_profile.csv,covered
+Main Related Work external-literature rows,Main Related Work context table,cited papers in the reference list,covered_by_cited_papers
+Main Related Work PVSE own row,Main Related Work context table,main_paper_exact/tables/related_work_own_result_context.csv,covered
+Main Figure 1,Main Fig. 1,main_paper_exact/figures_data/fig1_hard_delete_lattice_and_scene_types.md,covered
+Main Figure 2 rescue density,Main Fig. 2,main_paper_exact/figures_data/fig2_rescue_density_distribution.csv,covered
+Main Figure 2 delete-size composition,Main Fig. 2,main_paper_exact/figures_data/fig2_delete_size_composition.csv,covered
+Main Figure 3 A0 margin composition,Main Fig. 3,main_paper_exact/figures_data/fig3_a0_margin_case_composition.csv,covered
+Main Figure 4,Main Fig. 4,main_paper_exact/figures_data/fig4_pvse_overview.md,covered
+Main Figure 5,Main Fig. 5,main_paper_exact/figures_data/fig5_unified_realizations.md,covered
+Main structural constants,Main Sec. 1 / Sec. 3,main_paper_exact/text_values/structural_constants.csv,covered
+Main validation counterfactual text claims,Main Abstract / Sec. 4,main_paper_exact/text_values/validation_counterfactual_text_claims.csv,covered
+Main evaluation and uncertainty text claims,Main Sec. 6.2 / Table 8 caption,main_paper_exact/text_values/evaluation_uncertainty_text_claims.csv,covered
+Main noisy recovery text claims,Main Sec. 7.2,main_paper_exact/text_values/noisy_recovery_text_claims.csv,covered
+Main computational text claims,Main Sec. 8,main_paper_exact/text_values/computational_text_claims.csv,covered
+Supplement Table 1,Supplement Table 1,supplement_exact/table_s01_backbone_episode_protocol.csv,covered
+Supplement Table 2,Supplement Table 2,supplement_exact/table_s02_clean_pvse_c_verifier_hyperparameters.csv,covered
+Supplement Table 3,Supplement Table 3,supplement_exact/table_s03_clean_pvse_c_patch_verifier_feature_families.csv,covered
+Supplement Table 4,Supplement Table 4,supplement_exact/table_s04_clean_hard_delete_policy.csv,covered
+Supplement Table 5,Supplement Table 5,supplement_exact/table_s05_algorithm_s1_pvse_c_hd_inference.csv,covered
+Supplement Table 6,Supplement Table 6,supplement_exact/table_s06_noisy_pvse_r_soft_hyperparameters_by_severity.csv,covered
+Supplement Table 7,Supplement Table 7,supplement_exact/table_s07_noisy_pvse_r_reliability_feature_families.csv,covered
+Supplement Table 8,Supplement Table 8,supplement_exact/table_s08_noisy_pvse_r_hd_threshold_cap_policies.csv,covered
+Supplement Table 9,Supplement Table 9,supplement_exact/table_s09_noisy_pvse_r_hd_query_budget_policies.csv,covered
+Supplement Table 10,Supplement Table 10,supplement_exact/table_s10_algorithm_s2_pvse_r_soft_and_hard_reliability_inference.csv,covered
+Supplement Table 11,Supplement Table 11,supplement_exact/table_s11_protocol_definitions.csv,covered
+Supplement Table 12,Supplement Table 12,supplement_exact/table_s12_pvse_plugin_interface_contract.csv,covered
+Supplement Table 13,Supplement Table 13,supplement_exact/table_s13_freeze_policy.csv,covered
+Supplement Table 14,Supplement Table 14,supplement_exact/table_s14_statistical_uncertainty_protocol.csv,covered
+Supplement Table 15,Supplement Table 15,supplement_exact/table_s15_computational_profile.csv,covered
+Supplement Table 16,Supplement Table 16,supplement_exact/table_s16_traceability_to_main_paper_tables.csv,covered
+Supplement Table 16 source-table aliases,Supplement Table 16 source table/csv column,supplement_source_tables/,covered

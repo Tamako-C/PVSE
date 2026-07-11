@@ -1,0 +1,2 @@
+Work,Published protocol,Reported effect,Status here,Artifact basis
+PVSE (ours),miniImageNet support contamination,+1.511/+3.360/+3.555pp at 20/40/60%,controlled support-editing result,main_paper_exact/tables/table5_noisy_severity.csv

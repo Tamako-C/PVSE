@@ -1,0 +1,5 @@
+Variant,Output,Query-adaptive,Support-level,Downstream requirement,Cleaning role
+PVSE-C-Switch,query-level proposal override,yes,no,probabilities or logits with a runner-up class,query-level temporary edit
+PVSE-C-HD,query-specific delete mask,yes,temporary,support access and prediction recomputation after deletion,query-level hard-delete realization
+PVSE-R-Soft,support weights,no,yes,valid support-weight or attention-mask semantics,support reliability weighting
+PVSE-R-HD,support mask/delete set,no,yes,valid support mask or variable-support interface,support pre-cleaning

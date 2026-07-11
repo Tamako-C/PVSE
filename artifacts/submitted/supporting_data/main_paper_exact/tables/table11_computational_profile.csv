@@ -1,0 +1,6 @@
+Component,Candidate count,Trigger,Purpose
+Full lattice oracle,2626/query,analysis only,Exact delete<=3 upper bound
+PVSE-C-HD A0-only,26/query,after verifier accepts,Deployed clean hard deletion
+PVSE-C-HD FULL,2626/query,ablation,More complete but more expensive
+PVSE-R-Soft,25 supports,every noisy episode,Support weighting
+PVSE-R-HD,25 supports,every noisy episode,Support mask / cleaning

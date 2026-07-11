@@ -1,0 +1,1 @@
+Corruption labels are used only for calibration and evaluation supervision, not as test-time input features.

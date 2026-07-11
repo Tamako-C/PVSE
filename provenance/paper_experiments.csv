@@ -1,0 +1,13 @@
+paper_item,experiment_block,protocol,method_or_variant,reported_outputs,implementation
+Figure 1 / Table 1,validation lattice,miniImageNet val/test1000,full delete<=3 oracle,"safe,rescue,dead,oracle accuracy,gain",available
+Figure 2,validation lattice,miniImageNet validation,full delete<=3 oracle,"rescue density,delete-size composition",available
+Figure 3,validation lattice,miniImageNet validation,A0 baseline,A0-margin case composition,available
+Table 4,clean PVSE-C,miniImageNet clean test1000,A0; C-Switch; C-HD A0-only; C-HD FULL,"accuracy,gain CI,help,hurt,net,precision",available
+Table 5,noisy PVSE-R,main within-episode replacement 20/40/60%,Noisy A0; R-Soft,"accuracy,gain CI,net,support F1",available
+Table 6,budget ablation,per-class-1; corrupt-total-3,soft; budget<=3 HD; fixed top-3; per-class r=1,gain,available
+Table 7,patch ablation,main noisy; FEAT 20/40/60%,global-only; global+patch,gain,available
+Table 8,protocol alignment,TraNFS-style symmetric/paired 20/40/60%,Noisy A0; R-Soft; R-HD; oracle,"accuracy,gain CI",available
+Table 9,external transfer,CUB; Caltech101; DTD; FGVC-Aircraft; OfficeHome; PACS,A0; C-Switch; C-HD A0-only; C-HD FULL,"baseline accuracy,gain CI",available
+Table 10,FEAT plug-in,clean; noisy 20/40/60%,FEAT native; FEAT+PVSE-R-HD,"accuracy,gain CI,support F1",available
+Table 11,computational profile,reported configurations,full oracle; C-HD A0-only/FULL; R-Soft; R-HD,"candidate count,trigger,purpose,apply rate",available
+Supplement S2-S15,reproducibility support,all reported protocols,"calibration,features,policies,freeze,bootstrap",configs and protocol artifacts,available

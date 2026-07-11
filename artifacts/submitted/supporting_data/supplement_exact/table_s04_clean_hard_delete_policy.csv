@@ -1,0 +1,4 @@
+Variant,Deletion scope,kmax,Action score,Decision rule
+PVSE-C-Switch,N/A,0,N/A,Return verified proposal; otherwise A0 fallback
+PVSE-C-HD A0-only,supports from the A0 predicted class,3,proposal margin after deletion - edit_cost * |D|,strict: post-delete prediction must equal proposal; otherwise A0 fallback
+PVSE-C-HD FULL,all 25 support examples,3,proposal margin after deletion - edit_cost * |D|,strict: post-delete prediction must equal proposal; otherwise A0 fallback

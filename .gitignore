@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+outputs/
+*.joblib
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.npz
+*.npy
+*.local.*
+external_index*.csv

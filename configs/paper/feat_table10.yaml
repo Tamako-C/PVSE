@@ -1,0 +1,42 @@
+schema_version: 1
+run_kind: formal_paper_configuration
+formal_numerical_reproduction: true
+experiment: feat
+paths:
+  data_root: ${PVSE_FEAT_MINIIMAGENET_ROOT}
+  feat_root: ${PVSE_FEAT_CODE_ROOT}
+  checkpoint: ${PVSE_FEAT_CHECKPOINT}
+  output_dir: ${PVSE_OUTPUT_ROOT}/feat_table10
+feat_source_revision: 47bdc7c1672e00b027c67469d0291e7502918950
+checkpoint_sha256: ee54213c754b2c25d07bb7b032549140d7be8d4e253f597cfa57a314696191ee
+runtime:
+  device: ${PVSE_DEVICE}
+  batch_size: 100
+protocol:
+  way: 5
+  shot: 5
+  query: 15
+  resize: 92
+  crop: 84
+  use_euclidean: true
+  temperature: 64.0
+  temperature2: 32.0
+parameters:
+  mode: both
+  clean_val_episodes: 300
+  clean_test_episodes: 600
+  clean_val_seed: 517103
+  clean_test_seed: 517003
+  noisy_train_episodes: 50
+  noisy_val_episodes: 50
+  noisy_test_episodes: 1000
+  noisy_train_seed: 519100
+  noisy_val_seed: 519200
+  noisy_test_seed: 517003
+  severities:
+  - 1
+  - 2
+  - 3
+  max_delete: 3
+  bootstrap_samples: 10000
+  bootstrap_seed: 5200

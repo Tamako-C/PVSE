@@ -1,0 +1,9 @@
+Block,Question answered,Role
+Validation lattice,How large is the editable space?,Motivation and oracle ceiling
+Clean PVSE-C,Can patch evidence safely extract part of the oracle gap?,Formal clean result
+Noisy PVSE-R,Can support reliability repair corruption?,Main performance result
+Budget ablation,When should hard or soft be used?,Mechanism explanation
+Patch ablation,Does patch evidence improve global reliability?,Identifiability evidence
+External transfer,Does PVSE overfit one dataset?,Generalization check
+TraNFS-style protocol,Does it remain effective in a standard noisy-protocol family?,Protocol alignment
+FEAT plug-in,Can it be inserted into an independent model?,Plug-in evidence

@@ -1,0 +1,5 @@
+Variant,Query-adaptive,Support-level,Downstream requirement,Cleaning role
+PVSE-C-Switch,Yes,No,Allow prediction override by a verified proposal,No
+PVSE-C-HD,Yes,Temporary,Recompute prediction after support deletion,Decision explanation
+PVSE-R-Soft,No,Yes,Accept nonnegative support weights,Soft cleaning
+PVSE-R-HD,No,Yes,Accept support masks or reduced support sets,Explicit cleaning

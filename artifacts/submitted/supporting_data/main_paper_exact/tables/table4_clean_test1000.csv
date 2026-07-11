@@ -1,0 +1,5 @@
+Method,Acc.,Gain (episode CI),Help/Hurt,Net,Precision
+A0 prototype,77.775%,0,-,0,-
+PVSE-C-Switch reference,78.456%,"+0.681 [+0.525, +0.840]",1967/1456,+511,57.5%
+PVSE-C-HD A0-only,78.465%,"+0.691 [+0.532, +0.853]",1967/1449,+518,57.6%
+PVSE-C-HD FULL,78.460%,"+0.685 [+0.528, +0.847]",1967/1453,+514,57.5%

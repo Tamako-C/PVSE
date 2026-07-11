@@ -1,0 +1,8 @@
+schema_version: 1
+run_kind: formal_paper_configuration
+formal_numerical_reproduction: true
+experiment: computational_profile
+paths:
+  output_dir: ${PVSE_OUTPUT_ROOT}/computational_profile_table11
+  clean_query_outputs: ${PVSE_CLEAN_QUERY_OUTPUTS}
+parameters: {}

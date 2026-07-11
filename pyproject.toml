@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pvse-fsl"
+version = "0.4.0rc2"
+description = "Patch-Verifiable Support Editing for few-shot classification"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24,<3",
+  "pandas>=2.0,<3",
+  "scipy>=1.10,<2",
+  "scikit-learn>=1.3,<2",
+  "Pillow>=9",
+  "PyYAML>=6",
+  "torch>=2.0",
+  "torchvision>=0.15",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+pvse-build-external-index = "pvse.cli.build_external_index:main"
+pvse-build-profile = "pvse.cli.build_profile:main"
+pvse-release-check = "pvse.cli.release_check:main"
+pvse-run-budget = "pvse.cli.run_budget:main"
+pvse-run-clean = "pvse.cli.run_clean:main"
+pvse-run-config = "pvse.cli.run_config:main"
+pvse-run-external = "pvse.cli.run_external:main"
+pvse-run-feat = "pvse.cli.run_feat:main"
+pvse-run-lattice = "pvse.cli.run_lattice:main"
+pvse-run-noisy = "pvse.cli.run_noisy:main"
+pvse-run-tranfs = "pvse.cli.run_tranfs:main"
+pvse-smoke = "pvse.cli.smoke:main"
+pvse-validate-submitted = "pvse.cli.validate_submitted:main"
+pvse-verify-artifacts = "pvse.cli.verify_artifacts:main"
+
+[tool.setuptools.packages.find]
+include = ["pvse*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

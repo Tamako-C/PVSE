@@ -1,0 +1,6 @@
+Feature family,Examples,Role
+A0/proposal posterior and margin features,"A0 probability, runner-up probability, top-two gap",Anchor edits to the baseline classifier confidence
+Proposal-over-A0 patch margin,bidirectional proposal patch score minus A0 patch score,Measure local evidence for leaving A0
+Bidirectional query-support patch correspondence,"query-to-support, support-to-query, bidirectional top patch matches",Identify spatially aligned support evidence
+Proposal patch rank and coverage,"proposal patch rank, rank-one indicator, support agreement count",Prefer proposals with broad local support
+Support/query local consistency summaries,"patch entropy, coverage, class-level support consistency",Reject unstable or ambiguous patch evidence

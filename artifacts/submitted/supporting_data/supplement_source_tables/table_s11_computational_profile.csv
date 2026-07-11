@@ -1,0 +1,6 @@
+Component,Candidate count,Use
+Full delete lattice oracle,$\sum_{k=0}^{3}\binom{25}{k}=2626$ per query,oracle and FULL ablation
+PVSE-C-HD A0-only,$\sum_{k=0}^{3}\binom{5}{k}=26$ per accepted query,deployed clean hard-delete realization
+PVSE-C-HD FULL,2626 per accepted query,clean ablation
+PVSE-R-Soft,score 25 supports,support reliability weighting
+PVSE-R-HD,score 25 supports,support pre-cleaning

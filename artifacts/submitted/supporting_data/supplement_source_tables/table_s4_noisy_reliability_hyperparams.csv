@@ -1,0 +1,28 @@
+Severity,Parameter,Value
+20%,model,LogisticRegression
+20%,solver,liblinear
+20%,penalty,L1
+20%,C,0.5
+20%,feature_set,global_plus_patch
+20%,beta,1.5
+20%,w_min,0.0
+20%,train rows,1250
+20%,val rows,500
+40%,model,LogisticRegression
+40%,solver,lbfgs
+40%,penalty,L2
+40%,C,1.0
+40%,feature_set,global_plus_patch
+40%,beta,1.5
+40%,w_min,0.5
+40%,train rows,1250
+40%,val rows,500
+60%,model,LogisticRegression
+60%,solver,liblinear
+60%,penalty,L1
+60%,C,0.5
+60%,feature_set,global_plus_patch
+60%,beta,1.0
+60%,w_min,0.1
+60%,train rows,1250
+60%,val rows,500

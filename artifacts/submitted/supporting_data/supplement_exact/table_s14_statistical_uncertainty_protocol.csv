@@ -1,0 +1,10 @@
+Item,Definition
+Primary confidence interval,paired episode-bootstrap
+Bootstrap samples,B = 10000
+Resampling unit,episode IDs sampled with replacement
+Within-episode handling,keep all queries inside sampled episodes
+Gain method,accuracy minus paired baseline accuracy
+Interval,2.5 and 97.5 percentiles
+Query-level bootstrap,secondary diagnostic
+McNemar test,secondary paired-query diagnostic
+Rationale,queries inside the same episode are correlated

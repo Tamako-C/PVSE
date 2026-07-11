@@ -1,0 +1,15 @@
+Parameter,Value
+proposal_source,A0 runner-up
+feature_set,patch_plus_proposal
+model,LogisticRegression
+penalty,L1
+solver,liblinear
+C,0.5
+scaler,StandardScaler
+class_weight,balanced
+score,logit(p_help) - 2.0 * logit(p_hurt)
+threshold,5.35311817754396
+calibration_split,official validation
+calibration_episodes,300
+calibration_rows,22500 runner-up rows
+test_selection,false

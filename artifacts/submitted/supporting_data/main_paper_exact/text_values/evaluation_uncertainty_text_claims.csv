@@ -1,0 +1,6 @@
+Location,Quantity,Displayed value,Basis
+Sec. 6.2,episode protocol,5-way 5-shot,submitted main text
+Sec. 6.2,queries per class,15,submitted main text
+Sec. 6.2,test episodes,1000,test1000
+Table 8 caption,query predictions,"75,000",1000 episodes x 5 ways x 15 queries
+Sec. 6.2,bootstrap replicates,"10,000",paired episode-bootstrap
