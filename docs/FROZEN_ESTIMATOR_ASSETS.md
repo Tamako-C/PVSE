@@ -29,7 +29,7 @@ The first command does not deserialize joblib. The second should be used only fo
 
 | Paper scope | Asset | SHA-256 |
 |---|---|---|
-| Tables 5/7, 20% PVSE-R-Soft | `pvse_r_soft_minimagenet_noise20_v1.zip` | `61fb007389111e40752a60f2ed31bcf16ac97494bea1c89e5940775a4eac42cf` |
+| Tables 5/7, 20% PVSE-R-Soft | [`pvse_r_soft_minimagenet_noise20_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_soft_minimagenet_noise20_v1.zip) | `61fb007389111e40752a60f2ed31bcf16ac97494bea1c89e5940775a4eac42cf` |
 | Tables 5/7, 40% PVSE-R-Soft | `pvse_r_soft_minimagenet_noise40_v1.zip` | `160fe2ec63e3c27321f0799e31aa5d93a054ec75fce8eca549f16ed3898bb198` |
 | Tables 5/7, 60% PVSE-R-Soft | `pvse_r_soft_minimagenet_noise60_v1.zip` | `2232cbe9a4786cae1d48f7e7559ebde89ad0ae90e21e2335b83a2359908e95fb` |
 | Table 6, per-class-1 policies | `pvse_r_budget_perclass1_v1.zip` | `258999d5c35423f2cb5563d7a02a27ead8e9d27126ef7b09b3bf861114ea695a` |
