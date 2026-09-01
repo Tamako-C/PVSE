@@ -40,3 +40,4 @@ parameters:
     threshold: 5.35311817754396
     feature_set: patch_plus_proposal
     proposal_source: runnerup_a0
+    random_state: 3920

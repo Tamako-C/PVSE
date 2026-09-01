@@ -430,7 +430,9 @@ def mapping_matrix(rows: Sequence[Mapping[str, Any]], features: Sequence[str]) -
     missing = sorted({feature for feature in features if any(feature not in row for row in rows)})
     if missing:
         raise KeyError(f"missing FEAT features: {missing}")
-    values = np.asarray([[row[feature] for feature in features] for row in rows], dtype=np.float32)
+    # Match the original pandas ``astype(float)`` training path.  Keeping the
+    # calibration matrix in float64 preserves the selected threshold exactly.
+    values = np.asarray([[row[feature] for feature in features] for row in rows], dtype=np.float64)
     return np.nan_to_num(values, nan=0.0, posinf=0.0, neginf=0.0)
 
 

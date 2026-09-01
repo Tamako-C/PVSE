@@ -24,6 +24,7 @@ class ReliabilityConfig:
     class_weight: str = "balanced"
     max_iter: int = 1000
     feature_set: str = "global_plus_patch"
+    random_state: int | None = 3920
 
 
 PAPER_RELIABILITY_CONFIGS: dict[int, ReliabilityConfig] = {
@@ -84,6 +85,7 @@ def fit_reliability_estimator(
             penalty=config.penalty,
             solver=config.solver,
             C=float(config.C),
+            random_state=config.random_state,
         ),
     )
     model.fit(x, y)

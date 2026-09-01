@@ -37,6 +37,7 @@ pvse-run-tranfs = "pvse.cli.run_tranfs:main"
 pvse-smoke = "pvse.cli.smoke:main"
 pvse-validate-submitted = "pvse.cli.validate_submitted:main"
 pvse-verify-artifacts = "pvse.cli.verify_artifacts:main"
+pvse-verify-estimator-pack = "pvse.cli.verify_estimator_pack:main"
 
 [tool.setuptools.packages.find]
 include = ["pvse*"]

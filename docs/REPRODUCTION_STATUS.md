@@ -4,7 +4,8 @@
 |---|---|
 | Submitted supporting-data byte and SHA-256 integrity | 121 / 121 passed |
 | Submitted cross-table arithmetic | 52 / 52 passed |
-| Deterministic unit and protocol-regression suite | 47 / 47 passed |
+| Deterministic unit and protocol-regression suite | 53 / 53 passed |
+| Independent frozen-estimator archives | 25 / 25 passed isolated ZIP verification |
 | Formal paper configurations | 14 / 14 parsed |
 | ResNet-12 identity and strict loading | verified |
 | FEAT source/checkpoint identity and strict loading | verified |

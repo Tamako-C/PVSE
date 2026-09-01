@@ -1,17 +1,18 @@
 {
   "schema_version": 2,
-  "paper_title": "Identifiable Support Editing: From Hard-Delete Lattices to Patch-Verifiable Reliability",
+  "paper_title": "Identifiable Support Editing: From Hard-Delete Lattices to Patch-Based Visual Evidence",
   "repository_version": "0.4.0rc2",
   "release_contents": {
     "formal_configs": 14,
     "submitted_supporting_data": "byte_exact",
-    "unit_and_protocol_tests": 47,
+    "unit_and_protocol_tests": 53,
     "paper_items": 10
   },
   "verification": {
     "submitted_artifact_checks": "121/121 passed",
     "submitted_arithmetic_checks": "52/52 passed",
-    "unit_and_protocol_tests": "47/47 passed",
+    "unit_and_protocol_tests": "53/53 passed",
+    "independent_frozen_estimator_assets": "25/25 passed isolated ZIP verification",
     "real_data_integration": "passed on reduced episode/query counts across all reported experiment families",
     "software_license": "MIT; Copyright (c) 2026 Qianfeng Yuan"
   },
@@ -31,6 +32,29 @@
       "size_bytes": 49934618,
       "sha256": "763f0ae0a2233f16a9bd551ea22e2997e95dde8efdeb79270e52d9bd87bd1568",
       "access": "GitHub Release asset via PVSE_BACKBONE_CHECKPOINT"
+    },
+    {
+      "id": "frozen_clean_verifier",
+      "required_for": [
+        "Table 4",
+        "Table 9"
+      ],
+      "filename": "pvse_clean_verifier_table4_v1.zip",
+      "size_bytes": 12644,
+      "sha256": "888c9ed18b12fffa2f20e6859b8a12db9f146ce5325c5d01d9597246f3803fb8",
+      "portable_format": "JSON+NPZ",
+      "access": "GitHub Release asset"
+    },
+    {
+      "id": "frozen_paper_estimators",
+      "required_for": [
+        "Tables 5-8",
+        "Table 10"
+      ],
+      "asset_count": 24,
+      "portable_format": "JSON+NPZ",
+      "index": "docs/FROZEN_ESTIMATOR_ASSETS.md",
+      "access": "independent GitHub Release assets"
     },
     {
       "id": "external_datasets",
@@ -120,14 +144,16 @@
       "paper_item": "Table 4",
       "computation": "clean PVSE-C Switch, HD A0-only and HD FULL",
       "configs": [
-        "configs/paper/clean_table4.yaml"
+        "configs/paper/clean_table4.yaml",
+        "configs/frozen/clean_table4.yaml"
       ],
       "entrypoint": "pvse-run-config",
       "modules": [
         "pvse/clean/features.py",
         "pvse/clean/verifier.py",
         "pvse/clean/pvse_c.py",
-        "pvse/experiments/miniimagenet.py"
+        "pvse/experiments/miniimagenet.py",
+        "pvse/estimators/portable.py"
       ],
       "reference_artifacts": [
         "artifacts/submitted/supporting_data/main_paper_exact/tables/table4_clean_test1000.csv"

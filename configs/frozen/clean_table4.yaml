@@ -1,0 +1,45 @@
+schema_version: 1
+logical_role: clean.resnet12.table4
+paper_scope:
+  - Table 4 PVSE-C-Switch verifier
+  - Table 4 PVSE-C-HD verifier gate
+  - Table 9 fixed-transfer clean verifier
+release_asset:
+  file: pvse_clean_verifier_table4_v1.zip
+  size_bytes: 12644
+  sha256: 888c9ed18b12fffa2f20e6859b8a12db9f146ce5325c5d01d9597246f3803fb8
+portable:
+  metadata_file: portable/clean_verifier.json
+  metadata_sha256: 4eae7a590b746b88714bbc391763c73da438580b7be7c19bc3fb69fc2b5e4219
+  arrays_file: portable/clean_verifier.npz
+  arrays_sha256: 3b8ceaee696d0014e4ae6de456ef2e3712a160b1b915ad3811028c6e593938bb
+author_environment_snapshot:
+  file: joblib_author_env/clean_verifier.joblib
+  sha256: f8de52793d12032afc549d74e4b93e1471c83e29653f6051075d2bde1c703497
+calibration:
+  split: official_validation
+  episodes: 300
+  runner_up_rows: 22500
+  test_selection: false
+parameters:
+  proposal_source: runnerup_a0
+  feature_set: patch_plus_proposal
+  model: LogisticRegression
+  penalty: l1
+  solver: liblinear
+  C: 0.5
+  class_weight: balanced
+  scaler: StandardScaler
+  lambda_hurt: 2.0
+  threshold: 5.35311817754396
+  random_state: 3920
+formal_parity:
+  episodes: 1000
+  queries: 75000
+  baseline_accuracy_percent: 77.775
+  method_accuracy_percent: 78.456
+  gain_pp: 0.681
+  help: 1967
+  hurt: 1456
+  net: 511
+  precision_percent: 57.5

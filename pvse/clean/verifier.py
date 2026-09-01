@@ -24,6 +24,7 @@ class CleanVerifierConfig:
     threshold: float = 5.35311817754396
     feature_set: str = "patch_plus_proposal"
     proposal_source: str = "runnerup_a0"
+    random_state: int | None = None
 
 
 @dataclass
@@ -56,6 +57,7 @@ def _new_head(config: CleanVerifierConfig) -> Pipeline:
             penalty=config.penalty,
             solver=config.solver,
             C=float(config.C),
+            random_state=config.random_state,
         ),
     )
 
