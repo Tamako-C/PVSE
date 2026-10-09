@@ -50,7 +50,7 @@ The first command does not deserialize joblib. The second should be used only fo
 | Table 8, paired 40%, Soft | [`pvse_r_soft_tranfs_paired_noise40_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_soft_tranfs_paired_noise40_v1.zip) | `c31471eb985260181c227893e8ade1fab50dea03c082e73c934e96a3c0e35ca4` |
 | Table 8, paired 40%, HD | [`pvse_r_hd_tranfs_paired_noise40_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_hd_tranfs_paired_noise40_v1.zip) | `ed82585151f453d351fb29ed1fbeec33fb86c78f9f66d5775229ca2b86e9a8b2` |
 | Table 8, paired 60%, Soft | [`pvse_r_soft_tranfs_paired_noise60_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_soft_tranfs_paired_noise60_v1.zip) | `26aee75e01b044c6c799259e75903c11fc3e4af540c52183a72b3bdea8b88f88` |
-| Table 8, paired 60%, HD | `pvse_r_hd_tranfs_paired_noise60_v1.zip` | `ea92dde2d90043d16aff6434b88202b7e0fcf3538564e2fa5c9cc95a3707a88a` |
+| Table 8, paired 60%, HD | [`pvse_r_hd_tranfs_paired_noise60_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_hd_tranfs_paired_noise60_v1.zip) | `ea92dde2d90043d16aff6434b88202b7e0fcf3538564e2fa5c9cc95a3707a88a` |
 
 ## Frozen FEAT plug-in
 
