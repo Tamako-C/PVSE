@@ -60,7 +60,7 @@ The first command does not deserialize joblib. The second should be used only fo
 | Tables 7/10, 20% global+patch | [`pvse_r_hd_feat_noise20_global_patch_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_hd_feat_noise20_global_patch_v1.zip) | `aa1bc73848008ba2dacedf09b68479db885bd016b2d5a9e4d4a254f99ef0d01c` |
 | Table 7, 20% global-only | [`pvse_r_hd_feat_noise20_global_only_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_hd_feat_noise20_global_only_v1.zip) | `68fc273e5806933dfd830780f5ecd75118aaec9218ae08bf2ef8b6c2d58d7368` |
 | Tables 7/10, 40% global+patch | [`pvse_r_hd_feat_noise40_global_patch_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_hd_feat_noise40_global_patch_v1.zip) | `727f01cefb262f6348a7c8352ce4b7a764bd84203355d86a608f549b6647b51f` |
-| Table 7, 40% global-only | `pvse_r_hd_feat_noise40_global_only_v1.zip` | `98fafe0eba34fff5c72e6bdbfd38242316a3a17a6e836d8bd287f36219a47aae` |
+| Table 7, 40% global-only | [`pvse_r_hd_feat_noise40_global_only_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_hd_feat_noise40_global_only_v1.zip) | `98fafe0eba34fff5c72e6bdbfd38242316a3a17a6e836d8bd287f36219a47aae` |
 | Tables 7/10, 60% global+patch | `pvse_r_hd_feat_noise60_global_patch_v1.zip` | `735271b5dff3ed8c058c6f23d0bd10414a06e9bfd54ea9ee88c008142dd3b04a` |
 | Table 7, 60% global-only | `pvse_r_hd_feat_noise60_global_only_v1.zip` | `f11e85b27f0745b2caf8eba810394f127dab66d8a51e16826bbf0da79c2b8b09` |
 
