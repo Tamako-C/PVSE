@@ -45,7 +45,7 @@ The first command does not deserialize joblib. The second should be used only fo
 | Table 8, symmetric 40%, HD | [`pvse_r_hd_tranfs_symmetric_noise40_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_hd_tranfs_symmetric_noise40_v1.zip) | `94444dd1eecc8e0dcc4aa7915202036fbb174c14f985ab83e5ec3268828131ce` |
 | Table 8, symmetric 60%, Soft | [`pvse_r_soft_tranfs_symmetric_noise60_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_soft_tranfs_symmetric_noise60_v1.zip) | `259d660d064ec3d345c9fda673cc4ac8f83ea769a1f6780b1dd31c6615acfc22` |
 | Table 8, symmetric 60%, HD | [`pvse_r_hd_tranfs_symmetric_noise60_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_hd_tranfs_symmetric_noise60_v1.zip) | `db405e31ebaa71fc0c9e08110b0870aaf84cafd8589bbec5ce9a087bfd9b2438` |
-| Table 8, paired 20%, Soft | `pvse_r_soft_tranfs_paired_noise20_v1.zip` | `a461e59768264064e4c74e6cffabee80d57908e4b38b4018d86575f6be099a98` |
+| Table 8, paired 20%, Soft | [`pvse_r_soft_tranfs_paired_noise20_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_r_soft_tranfs_paired_noise20_v1.zip) | `a461e59768264064e4c74e6cffabee80d57908e4b38b4018d86575f6be099a98` |
 | Table 8, paired 20%, HD | `pvse_r_hd_tranfs_paired_noise20_v1.zip` | `b3afbeaa7086c626afe91df229de053572569276581c9bf19b0be4ecd8183829` |
 | Table 8, paired 40%, Soft | `pvse_r_soft_tranfs_paired_noise40_v1.zip` | `c31471eb985260181c227893e8ade1fab50dea03c082e73c934e96a3c0e35ca4` |
 | Table 8, paired 40%, HD | `pvse_r_hd_tranfs_paired_noise40_v1.zip` | `ed82585151f453d351fb29ed1fbeec33fb86c78f9f66d5775229ca2b86e9a8b2` |
