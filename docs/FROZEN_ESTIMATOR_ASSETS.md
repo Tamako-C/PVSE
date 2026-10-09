@@ -56,7 +56,7 @@ The first command does not deserialize joblib. The second should be used only fo
 
 | Paper scope | Asset | SHA-256 |
 |---|---|---|
-| Table 10 clean gate | `pvse_c_feat_clean_gate_v1.zip` | `a8b20d6a512bb646e63e9a89fc24c14208a6367ea44a373260d1d5e7bb171482` |
+| Table 10 clean gate | [`pvse_c_feat_clean_gate_v1.zip`](https://github.com/Tamako-C/PVSE/releases/download/v0.4.0rc2/pvse_c_feat_clean_gate_v1.zip) | `a8b20d6a512bb646e63e9a89fc24c14208a6367ea44a373260d1d5e7bb171482` |
 | Tables 7/10, 20% global+patch | `pvse_r_hd_feat_noise20_global_patch_v1.zip` | `aa1bc73848008ba2dacedf09b68479db885bd016b2d5a9e4d4a254f99ef0d01c` |
 | Table 7, 20% global-only | `pvse_r_hd_feat_noise20_global_only_v1.zip` | `68fc273e5806933dfd830780f5ecd75118aaec9218ae08bf2ef8b6c2d58d7368` |
 | Tables 7/10, 40% global+patch | `pvse_r_hd_feat_noise40_global_patch_v1.zip` | `727f01cefb262f6348a7c8352ce4b7a764bd84203355d86a608f549b6647b51f` |
